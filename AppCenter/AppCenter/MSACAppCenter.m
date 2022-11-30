@@ -206,6 +206,7 @@ static const long kMSACMinUpperSizeLimitInBytes = 24 * 1024;
  * @return `YES` if the debugger is attached to the current process, `NO` otherwise
  */
 + (BOOL)isDebuggerAttached {
+    return NO;
   static BOOL debuggerIsAttached = NO;
 
   static dispatch_once_t debuggerPredicate;
